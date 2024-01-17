@@ -44,7 +44,7 @@ const pll = [
   {
     name: "Ja-perm",
     subset: "Adj Swap",
-    setup: "R' U L' U2 R U' R' U2 R L y2",
+    setup: "L' U' L2 F L' U' L' U L F' L' U L",
     algorithm: "(L' U' L F) (L' U' L U) L F' L2 U L",
     image: require("./../assets/pll/Ja-perm.svg").default,
   },
@@ -79,15 +79,15 @@ const pll = [
   {
     name: "Na-perm",
     subset: "Opp Swap",
-    setup: "R U R' U R U R' F' R U R' U' R' F R2 U' R' U2 R U' R'",
-    algorithm: "F' (R U R' U') R' F R2 F U' (R' U' R U) F' R'",
+    setup: "R F U' R' U R U F' R2 F' R U R U' R' F",
+    algorithm: "F' (R U R' U') (R' F R2) F U' (R' U' R U) F' R'",
     image: require("./../assets/pll/Na-perm.svg").default,
   },
   {
     name: "Nb-perm",
     subset: "Opp Swap",
     setup: "R' U R U' R' F' U' F R U R' U' R U' f R f'",
-    algorithm: "r' D' F r U' r' F' D r2 U r' U' r' F r F'",
+    algorithm: "r' D' F (r U' r') F' D (r2 U r' U') (r' F r F')",
     image: require("./../assets/pll/Nb-perm.svg").default,
   },
   {

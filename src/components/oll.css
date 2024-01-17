@@ -1,0 +1,63 @@
+.ollContainer {
+  display: flex;
+  margin-inline: 1rem;
+  margin-block: 8px 2px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 0.5px #4444;
+}
+
+.ollBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.ollInfo {
+  margin-inline: 4px;
+}
+
+.ollCase {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.ollIcon img {
+  margin: 8px;
+  height: 72px;
+  width: 72px;
+}
+
+.ollSubset {
+  font-size: 0.8rem;
+  translate: 0px -0.5px 0px;
+  display: inline-block;
+  margin-inline: 4px;
+}
+
+.ollSetupHeading {
+  display: inline-block;
+  margin-inline: 4px;
+  font-weight: bold;
+}
+.ollSetupBody {
+  display: inline-block;
+}
+
+.ollSetupContainer {
+  display: flex;
+}
+
+.ollAlgContainer {
+  display: flex;
+}
+
+.ollAlgHeading {
+  font-weight: bold;
+  margin-inline: 4px;
+  display: inline-block;
+}
+
+.ollAlgBody {
+  display: inline-block;
+}

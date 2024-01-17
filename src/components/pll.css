@@ -1,0 +1,63 @@
+.pllContainer {
+  display: flex;
+  margin-inline: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 0.5px #4444;
+}
+
+.pllBody {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.pllInfo {
+  margin-inline: 4px;
+}
+
+.pllCase {
+  font-weight: bold;
+  display: inline-block;
+}
+
+.pllIcon img {
+  margin: 8px;
+  height: 72px;
+  width: 72px;
+}
+
+.pllSubset {
+  font-size: 0.8rem;
+  translate: 0px -0.5px 0px;
+  display: inline-block;
+  margin-inline: 4px;
+}
+
+.pllSetupHeading {
+  display: inline-block;
+  margin-inline: 4px;
+  font-weight: bold;
+}
+.pllSetupBody {
+  display: inline-block;
+}
+
+.pllSetupContainer {
+  display: flex;
+}
+
+.pllAlgContainer {
+  display: flex;
+}
+
+.pllAlgHeading {
+  font-weight: bold;
+  margin-inline: 4px;
+  display: inline-block;
+}
+
+.pllAlgBody {
+  display: inline-block;
+}

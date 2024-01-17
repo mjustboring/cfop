@@ -1,10 +1,11 @@
-import "./App.css";
+import "./app.css";
+import "./theme.css"
 import { oll } from "./data/oll";
 import { pll } from "./data/pll";
 import { f2l } from "./data/f2l";
-import { OLL } from "./components/oll";
-import { PLL } from "./components/pll";
-import { F2L } from "./components/f2l";
+import OLL from "./components/OLL";
+import PLL from "./components/PLL";
+import F2L from "./components/F2L";
 
 function App() {
   return (

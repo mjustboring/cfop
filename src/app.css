@@ -1,0 +1,28 @@
+.App > hr {
+  margin-block: 1rem;
+  border: 1px solid #1114;
+  box-shadow: 0 0 1px 1px #1111;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--mainbg);
+  font-family: 'Kanit', sans-serif;
+  line-height: 1.2em;
+  font-size: 0.9rem;
+  color: var(--textclr);
+}
+
+h3 {
+  display: block;
+  margin-block: 0.5rem;
+  margin-inline: auto;
+  color: #444;
+  text-align: center;
+}

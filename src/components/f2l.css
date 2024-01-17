@@ -1,76 +1,95 @@
 .f2lContainer {
   display: flex;
-  margin-inline: 8px;
-  margin-block: 8px 2px;
+  align-items: center;
+  margin-inline: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2px 0.5px #4444;
+  padding-inline: 0.5rem;
+  padding-block: 0.3rem;
 }
 
 .f2lContainer hr {
-  border: 0.5px solid #4444;
+  border: 0.5px solid #2222;
   margin-block: 1px;
 }
 
 .f2lInfo {
   display: flex;
   flex-direction: column;
-  justify-content: start;
   align-items: center;
+  justify-content: center;
+  flex: 1;
 }
 
 .f2lCase {
-  translate: 0% 50%;
   font-weight: bold;
 }
 
 .f2lIcon img {
-  width: 88px;
-  height: 88px;
+  width: 80px;
+  height: 80px;
+  border: 1px solid #2222;
+  border-radius: 0.25rem;
 }
 
 .f2lSubset {
   font-size: 12px;
-  font-weight: bold;
-  translate: 0% -50%;
+  text-align: center;
+  line-height: 1.1em;
+  translate: 0 -10% 0;
 }
 
-.setupHeading {
-  display: inline-block;
-  margin-inline: 4px;
-  font-weight: bold;
-}
-.setupDiv {
-  display: inline-block;
+.f2lSetupContainer {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+  margin-inline: 8px;
 }
 
-.algContainer {
+.f2lSetupHeading {
+  font-weight: bold;
+}
+.f2lSetupBody {
+}
+
+.f2lAlgContainer {
   display: flex;
   gap: 4px;
   margin-inline: 4px;
 }
 
-.algHeading {
+.f2lBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  border-left: 1px solid #2222;
+  margin-left: 0.5rem;
+  flex: 3;
+}
+
+.f2lAlgBody {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.f2lAlgHeading {
   writing-mode: vertical-lr;
   text-align: center;
   transform: rotate(180deg);
   color: #222A;
+  border-left: 1px solid #2222;
   margin-block-end: 2px;
+  padding-left: 2px;
 }
 
-.algDiv {
+.f2lAlgDiv {
   display: flex;
-  gap: 4px;
   align-items: center;
+  gap: 4px;
 }
 
-.algCat {
+.f2lAlgCat {
   font-weight: bold;
 }
-
-.alg {
-  border: 1px solid #4444;
-  border-radius: 4px;
-  padding-inline: 4px;
-  margin: 1px;
-  box-shadow: inset 0 0 2px 0.5px #4444;
-  display: inline-block;
-}
-
