@@ -44,8 +44,8 @@ const pll = [
   {
     name: "Ja-perm",
     subset: "Adj Swap",
-    setup: "L' U' L2 F L' U' L' U L F' L' U L",
-    algorithm: "(L' U' L F) (L' U' L U) L F' L2 U L",
+    setup: "r U2 r' U' r U2 R' F R' F' R2 r'",
+    algorithm: "r R2 F R F' R U2 r' U r U2 r'",
     image: require("./../assets/pll/Ja-perm.svg").default,
   },
   {

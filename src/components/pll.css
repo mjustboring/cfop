@@ -1,15 +1,17 @@
 .pllContainer {
   display: flex;
+  align-items: center;
   margin-inline: 1rem;
   margin-bottom: 0.5rem;
   border-radius: 0.5rem;
   box-shadow: 0 0 2px 0.5px #4444;
+  padding-block: 0.25rem 0;
+  padding-inline: 0.25rem;
 }
 
 .pllBody {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 4px;
 }
 
@@ -23,9 +25,12 @@
 }
 
 .pllIcon img {
-  margin: 8px;
   height: 72px;
   width: 72px;
+  border: 1px solid #2222;
+  border-radius: 0.25rem;
+  padding: 4px;
+  margin: 2px;
 }
 
 .pllSubset {
@@ -50,6 +55,7 @@
 
 .pllAlgContainer {
   display: flex;
+  align-items: center;
 }
 
 .pllAlgHeading {
@@ -60,4 +66,12 @@
 
 .pllAlgBody {
   display: inline-block;
+}
+
+.dark .pllContainer {
+  box-shadow: 0 0 2px 0.5px #bbb4;
+}
+
+.dark .pllIcon img {
+  border: 1px solid #ddd4;
 }

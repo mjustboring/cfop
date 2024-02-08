@@ -19,7 +19,7 @@ const OLL = ({ name, subset, setup, algorithm, image }) => {
           </div>
           <div className="ollAlgContainer">
             <div className="ollAlgHeading">Alg</div>
-            <div className="ollAlgBody">{Algorithm(algorithm)}</div>
+            <div className="ollAlgBody">{algorithm.map(Algorithm)}</div>
           </div>
         </div>
       </div>

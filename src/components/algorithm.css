@@ -3,22 +3,41 @@
   border-radius: 4px;
   padding-inline: 4px;
   margin: 1px;
-  box-shadow: inset 0 0 2px 0.5px #4444;
+  box-shadow: inset 0 0 0.5px 0.5px #4444;
   display: inline-block;
+}
+.dark .algorithm {
+  border: 1px solid #bbb4;
+  box-shadow: inset 0 0 2px 0.5px #bbb4;
 }
 
 .algorithmImvClr {
-  color: #a62;
+  color: #2a6;
+}
+.dark .algorithmImvClr {
+  color: #4d8;
 }
 
 .algorithmAufClr {
-  color: #2a6;
+  color: #26a;
+}
+
+.dark .algorithmAufClr {
+  color: #49e;
 }
 
 .algorithmBraClr {
-  color: #bbb;
+  color: #bbc;
+}
+
+.dark .algorithmBraClr {
+  color: #445;
 }
 
 .algorithmRotClr {
-  color: #26a;
+  color: #a62;
+}
+
+.dark .algorithmRotClr {
+  color: #c84;
 }

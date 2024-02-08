@@ -1,9 +1,0 @@
-:root {
-  --mainbg: #fff;
-  --textclr: #222;
-}
-
-body.dark {
-  --mainbg: #222;
-  --textclr: #fff;
-}

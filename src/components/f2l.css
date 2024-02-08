@@ -50,6 +50,7 @@
 .f2lSetupHeading {
   font-weight: bold;
 }
+
 .f2lSetupBody {
 }
 
@@ -92,4 +93,25 @@
 
 .f2lAlgCat {
   font-weight: bold;
+}
+
+.dark .f2lContainer {
+  box-shadow: 0 0 2px 0.5px #bbb4;
+}
+
+.dark .f2lContainer hr {
+  border: 0.5px solid #ddd2;
+}
+
+.dark .f2lBody {
+  border-left: 1px solid #ddd4;
+}
+
+.dark .f2lAlgHeading {
+  color: #dddA;
+  border-left: 1px solid #ddd4;
+}
+
+.dark .f2lIcon img {
+  border: 1px solid #ddd4;
 }

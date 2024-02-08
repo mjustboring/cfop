@@ -4,6 +4,11 @@
   box-shadow: 0 0 1px 1px #1111;
 }
 
+.dark .App > hr {
+  border: 1px solid #eee4;
+  box-shadow: 0 0 1px 1px #eee1;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 * {
@@ -12,17 +17,86 @@
 }
 
 body {
-  background: var(--mainbg);
+  background: #fff;
   font-family: 'Kanit', sans-serif;
   line-height: 1.2em;
   font-size: 0.9rem;
-  color: var(--textclr);
+  color: #111;
 }
 
-h3 {
-  display: block;
-  margin-block: 0.5rem;
-  margin-inline: auto;
-  color: #444;
-  text-align: center;
+body.dark {
+  background: #111;
+  color: #fff;
+}
+
+.pageNav {
+  display: flex;
+  gap: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  translate: -50%;
+  margin-left: 50%;
+  transition: filter 200ms linear;
+  transition: bottom 500ms linear;
+}
+
+.pageNav.dim {
+  filter: opacity(0.4);
+}
+
+.pageNav.hide {
+  bottom: -4rem;
+}
+
+.page {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1.2rem;
+  background: #ccc;
+  border-radius: 0.5rem;
+  padding-inline: 1rem;
+  font-weight: bold;
+  box-shadow: 0 0 4px 1px #0008;
+}
+
+.page.active {
+  border-color: #37f;
+  background: #444;
+  box-shadow: 0 0 4px 1px #37f8;
+  color: #eee;
+}
+
+header {
+  display: flex;
+  align-content: center;
+  padding-inline: 2rem;
+  gap: 1rem;
+  padding-block: 0.5rem;
+  box-shadow: 0 0 4px 1px #1118;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #444;
+  z-index: 2;
+  transition: top 500ms linear;
+}
+
+header.hide {
+  top: -3.5rem;
+}
+
+header > img {
+  width: 2rem;
+  height: 2rem;
+}
+
+header > div {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-block: auto;
+  color: #eee;
+}
+
+main {
+  margin-block: 3.5rem 5rem;
 }
