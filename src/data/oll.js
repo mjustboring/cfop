@@ -59,7 +59,7 @@ const oll = [
     name: "OLL 9",
     subset: "Fish Shapes",
     setup: "F U R U' R' R' F' R U R U' R'",
-    algorithm: ["(R U R' U') (R' F R) (R U R' U') F'"],
+    algorithm: ["(R U R' U') R' F (R2 U R' U') F'"],
     image: require("./../assets/oll/OLL 9.svg").default,
   },
   {
@@ -73,14 +73,14 @@ const oll = [
     name: "OLL 11",
     subset: "Lightning Shapes",
     setup: "M U' R U2 R' U' R U' R2 r",
-    algorithm: ["r' (R2 U R' U R U2 R') U M'"],
+    algorithm: ["r' (R2 U R' U R U2 R') U M'", "S (R U R' U R U2 R') U2 S'"],
     image: require("./../assets/oll/OLL 11.svg").default,
   },
   {
     name: "OLL 12",
     subset: "Lightning Shapes",
     setup: "S' U2 r' F2 r U r' F r S",
-    algorithm: ["S' U2 (R' U' R U' R' U2 R) S"],
+    algorithm: ["l (L2 U' L U' L' U2 L) U' M'", "S' (L' U' L U' L' U2 L) U2 S"],
     image: require("./../assets/oll/OLL 12.svg").default,
   },
   {
@@ -100,15 +100,22 @@ const oll = [
   {
     name: "OLL 15",
     subset: "Knight Move Shapes",
-    setup: "R' F R U R' U' F' R U' R' U2 R",
-    algorithm: ["R' U2 (R U R' F) (U R U' R') F' R"],
+    setup: "r' U' r U' R' U R r' U r",
+    algorithm: [
+      "y' (R' U2 R) U R' (F U R U' R' F') R",
+      "(r' U' r) (R' U' R U) (r' U r)",
+      "y2 l' U' l L' U' L U l' U l",
+    ],
     image: require("./../assets/oll/OLL 15.svg").default,
   },
   {
     name: "OLL 16",
     subset: "Knight Move Shapes",
     setup: "r U r' U R U' R' r U' r'",
-    algorithm: ["(r U r') (R U R' U') (r U' r')"],
+    algorithm: [
+      "y2 R' (F R U R' U' F') R U' (R' U2 R)",
+      "(r U r') (R U R' U') (r U' r')",
+    ],
     image: require("./../assets/oll/OLL 16.svg").default,
   },
   {
@@ -136,7 +143,11 @@ const oll = [
     name: "OLL 20",
     subset: "Dot Case",
     setup: "r U R' U' M2 U R U' R' U' R' r",
-    algorithm: ["r' R U (R U R' U') M2 (U R U' r')"],
+    algorithm: [
+      "r' R U (R U R' U') M2 (U R U' r')",
+      "S' (R U R') S U' M' (U R U' r')",
+      "(r U R' U') (M' R') r (U R U' R') U' M'",
+    ],
     image: require("./../assets/oll/OLL 20.svg").default,
   },
   {
@@ -353,7 +364,7 @@ const oll = [
     name: "OLL 51",
     subset: "Line Shapes",
     setup: "F R U R' U' R U R' U' F'",
-    algorithm: ["y2 R U2 R' U2 R' F R2 U R' U' F'", "F (U R U' R') (U R U' R') F'"],
+    algorithm: ["F (U R U' R') (U R U' R') F'"],
     image: require("./../assets/oll/OLL 51.svg").default,
   },
   {
@@ -381,7 +392,7 @@ const oll = [
     name: "OLL 55",
     subset: "Line Shapes",
     setup: "F R' F' U2 R U R' U R2 U2 R'",
-    algorithm: ["R U2 R2 (U' R U' R') U2 (F R F')"],
+    algorithm: ["(R' F R) (U R U' R2) F' (R2 U' R' U) (R U R')"],
     image: require("./../assets/oll/OLL 55.svg").default,
   },
   {

@@ -91,6 +91,11 @@
   gap: 4px;
 }
 
+.border-bottom {
+  border-bottom: 0.5px solid #2224;
+  padding-bottom: 2px;
+}
+
 .f2lAlgCat {
   font-weight: bold;
 }

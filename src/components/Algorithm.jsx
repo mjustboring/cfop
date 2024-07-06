@@ -18,6 +18,10 @@ const Algorithm = (alg) => {
     /[xyz]['\d]*/g,
     (x) => `<span class="algorithmRotClr">${x}</span>`
   );
+  alg = alg.replaceAll(
+    /\|/g,
+    (x) => `<span class="algorithmOrClr">${x}</span>`
+  );
 
   return (
     <>

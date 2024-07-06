@@ -19,7 +19,7 @@ const PLL = ({ name, subset, setup, algorithm, image }) => {
           </div>
           <div className="pllAlgContainer">
             <div className="pllAlgHeading">Alg</div>
-            <div className="pllAlgBody">{Algorithm(algorithm)}</div>
+            <div className="pllAlgBody">{algorithm.map(Algorithm)}</div>
           </div>
         </div>
       </div>

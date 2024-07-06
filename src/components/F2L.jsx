@@ -21,19 +21,19 @@ const F2L = ({ name, subset, setup, algorithm, image }) => {
           <div className="f2lAlgContainer">
             <div className="f2lAlgHeading">Algorithms</div>
             <div className="f2lAlgBody">
-              <div className="f2lAlgDiv">
+              <div className="f2lAlgDiv border-bottom">
                 <div className="f2lAlgCat">FR</div>
                 <div className="f2lAlgCatBody">
                   {algorithm.fr.map(Algorithm)}
                 </div>
               </div>
-              <div className="f2lAlgDiv">
+              <div className="f2lAlgDiv border-bottom">
                 <div className="f2lAlgCat">FL</div>
                 <div className="f2lAlgCatBody">
                   {algorithm.fl.map(Algorithm)}
                 </div>
               </div>
-              <div className="f2lAlgDiv">
+              <div className="f2lAlgDiv border-bottom">
                 <div className="f2lAlgCat">BL</div>
                 <div className="f2lAlgCatBody">
                   {algorithm.bl.map(Algorithm)}
